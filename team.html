@@ -1,9 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact Us - MUZEX TECHNOLOGIES</title><meta name="description" content="Contact MUZEX - Let's build something extraordinary."><link rel="stylesheet" href="style.css"></head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Team - MUZEX TECHNOLOGIES</title>
+<meta name="description" content="Meet Our Team - MUZEX Technologies.">
 <link rel="stylesheet" href="style.css">
-  <style>
+<style>
     /* MOBILE NAVBAR FIX - MUZEX */
 @media (max-width: 768px){
   header{
@@ -80,7 +83,7 @@
     font-size:22px !important;
   }
 }
-{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
 body{background:#fff;padding:20px}
 
 /* LIGHT PURPLE BOX */
@@ -135,11 +138,10 @@ footer{
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-/* MOBILE NAVBAR FIX - MUZEX */
-/* MOBILE NAVBAR FIX - MUZEX */
+}
+</style>
+</head>
 
-    </style>
-  
 <body class="team-page">
 <div class="container">
 <header>
@@ -148,7 +150,6 @@ footer{
 <nav id="mainNav"><a href="index.html"><span>Home</span></a><a href="about.html"><span>About</span></a><a href="services.html"><span>Services</span></a><a href="team.html"><span>Team</span></a><a href="contact.html"><span>Contact</span></a></nav>
 <a href="contact.html" class="btn-top">Get a Quote</a>
 </header>
-<body>
 
 <!-- TEAM SECTION -->
 <div class="team-box">
@@ -163,21 +164,18 @@ footer{
       <h4>Founder & Graphic Designer</h4>
       <p>Leads MUZEX with creative vision and designs modern, beautiful brand identities.</p>
     </div>
-  <div class="card">
+    <div class="card">
       <img src="touseef .jpeg">
       <h3>Touseef Khalid</h3>
       <h4>Software Developer</h4>
       <p>Builds powerful software solutions and solves complex technical problems.</p>
     </div>
-    
-
     <div class="card">
       <img src="mohsin.jpeg">
       <h3>Muhammad Mohsin</h3>
       <h4>App Developer</h4>
       <p>Develops user-friendly mobile apps that work smoothly on all devices.</p>
     </div>
-
     <div class="card">
       <img src="zainab.jpeg">
       <h3>Zainab Fatima</h3>
@@ -190,8 +188,6 @@ footer{
       <h4>Web Developer</h4>
       <p>Builds fast and modern websites with clean code and smooth user experience.</p>
     </div>
-
-  
   </div>
 </div>
 
@@ -204,18 +200,11 @@ footer{
   </div>
   <div class="footer-bottom"><a href="mailto:muzextechnologies@gmail.com" class="btn-email">✉️ Email Us</a><p>© 2026 MUZEX TECHNOLOGIES. All Rights Reserved.</p><a href="https://wa.me/923095794028" target="_blank" class="btn-whatsapp">💬 WhatsApp - +92 309 5794028</a></div>
 </footer>
+</div>
+
 <script>
-document.addEventListener('DOMContentLoaded', function(){
-  var btn = document.querySelector('.menu-btn');
-  var nav = document.getElementById('mainNav');
-  btn.addEventListener('click', function(){
-    if(nav.style.display === 'flex'){
-      nav.style.display = 'none';
-    } else {
-      nav.style.display = 'flex';
-      nav.style.flexDirection = 'column';
-    }
-  });
+document.getElementById('menuBtn').addEventListener('click', function(){
+  document.getElementById('mainNav').classList.toggle('show');
 });
 </script>
 </body>
