@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zaibabutt.github.io/sitemap.xml
