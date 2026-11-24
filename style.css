@@ -336,17 +336,13 @@ nav{ display:flex !important; flex-direction:row !important; }
 .logo-text{
   display: flex !important;
   flex-direction: column !important;
-  align-items: flex-start !important;
   line-height: 1.1 !important;
 }
-
 .logo-tag{
   display: block !important;
-  width: 100% !important;
   font-size: 9px !important;
   letter-spacing: 3px !important;
   color: #888 !important;
   font-weight: 600 !important;
   margin-top: 2px !important;
-}
 }
