@@ -6,10 +6,12 @@
 <title>Our Team - MUZEX TECHNOLOGIES</title>
 <meta name="description" content="Meet Our Team - MUZEX Technologies.">
 <link rel="stylesheet" href="style.css">
-<style>
-/* TEAM HEADER FIX - LAPTOP + MOBILE DONO */
 
-/* ===== LAPTOP ===== */
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#fff;padding:20px}
+
+/* ===== HEADER - LAPTOP ===== */
 @media (min-width: 769px){
   header{
     display:flex !important;
@@ -34,9 +36,7 @@
     min-width:70px !important;
     object-fit:contain !important;
   }
-  header .logo br{
-    display:none !important;
-  }
+  header .logo br{display:none !important;}
   header .logo-text, header .logo h1, header .logo span, header h1{
     font-size:21px !important;
     line-height:1.1 !important;
@@ -56,20 +56,12 @@
     align-items:center !important;
     white-space:nowrap !important;
   }
-  header nav a{
-    font-size:15px !important;
-    white-space:nowrap !important;
-  }
-  header .menu-btn{
-    display:none !important;
-  }
-  header .btn-top{
-    display:block !important;
-    white-space:nowrap !important;
-  }
+  header nav a{font-size:15px !important; white-space:nowrap !important;}
+  header .menu-btn{display:none !important;}
+  header .btn-top{display:block !important; white-space:nowrap !important;}
 }
 
-/* ===== MOBILE ===== */
+/* ===== HEADER - MOBILE ===== */
 @media (max-width: 768px){
   header{
     display:flex !important;
@@ -96,9 +88,7 @@
     min-width:55px !important;
     object-fit:contain !important;
   }
-  header .logo br{
-    display:none !important;
-  }
+  header .logo br{display:none !important;}
   header .logo-text, header .logo h1, header .logo span, header h1{
     font-size:18px !important;
     line-height:1.1 !important;
@@ -123,9 +113,7 @@
     order:2 !important;
     margin-left:auto !important;
   }
-  header .btn-top{
-    display:none !important;
-  }
+  header .btn-top{display:none !important;}
   header nav{
     display:none !important;
     position:absolute !important;
@@ -137,9 +125,7 @@
     box-shadow:0 10px 30px rgba(0,0,0,.15) !important;
     z-index:99 !important;
   }
-  header nav.open, header nav.active, header nav.show{
-    display:flex !important;
-  }
+  header nav.open, header nav.active, header nav.show{display:flex !important;}
   header nav a{
     display:block !important;
     padding:12px !important;
@@ -147,8 +133,62 @@
     font-size:16px !important;
   }
 }
-</style>
 
+/* ===== TEAM BOX - WAPIS LAYA ===== */
+.team-box{
+  background:#E9E5FF;
+  border-radius:18px;
+  padding:40px 25px;
+  text-align:center;
+  clear:both;
+}
+.badge{
+  background:#FFE4EC;color:#EC4899;
+  font-size:11px;font-weight:700;
+  padding:6px 12px;border-radius:20px;
+}
+.team-box h1{font-size:32px;margin:12px 0 8px}
+.team-box h1 span{color:#D946EF}
+.team-box p.sub{color:#666;font-size:14px;margin-bottom:30px}
+
+/* ===== CARDS ===== */
+.cards{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.card{
+  background:#fff;width:220px;border-radius:15px;
+  padding:15px;text-align:left;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06)
+}
+.card img{width:100%;height:220px;object-fit:cover;border-radius:12px}
+.card h3{font-size:16px;margin:12px 0 2px}
+.card h4{font-size:12px;color:#A855F7;margin-bottom:8px}
+.card p{font-size:12.5px;color:#666;line-height:1.6}
+
+/* ===== FOOTER ===== */
+footer{
+  background:linear-gradient(90deg,#7C3AED,#D946EF,#2563EB);
+  color:#fff;padding:35px 30px 0;margin-top:25px;
+}
+.footer-top{display:flex;gap:40px;flex-wrap:wrap;justify-content:space-between}
+.footer-top h3{font-size:18px;margin-bottom:12px}
+.footer-top p, .footer-top a{font-size:13px;color:#fff;line-height:1.8;text-decoration:none}
+.logo-box{display:flex;align-items:center;gap:12px}
+.logo-box img{width:55px;height:55px;border-radius:12px;background:#fff;object-fit:cover}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.3);
+  margin-top:25px;padding:15px 0;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+  font-size:12px;
+}
+.btn-pink{background:#EC4899;color:#fff;border:none;padding:8px 14px;border-radius:20px;font-size:12px}
+.btn-green{background:#16A34A;color:#fff;border:none;padding:8px 14px;border-radius:20px;font-size:12px}
+.gradient-text{
+  background: linear-gradient(90deg, #2563EB, #7C3AED, #D946EF, #2563EB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+</style>
 
 </head>
 
