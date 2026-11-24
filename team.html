@@ -84,21 +84,111 @@
     font-size:22px !important;
   }
 }
-/* SIRF ICON FIX - BAKI KUCH NAHI */
-.icon-box{
-  width:62px !important;
-  height:62px !important;
-  border-radius:50% !important;
-  display:flex !important;
-  align-items:center !important;
-  justify-content:center !important;
-  background:linear-gradient(135deg,#A855F7,#EC4899) !important;
-  box-shadow:0 8px 20px rgba(168,85,247,.35) !important;
+<style>
+/* MOBILE NAVBAR FIX - MUZEX */
+@media (max-width: 768px){
+  header{
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    flex-wrap:nowrap !important;
+    gap:8px !important;
+    padding:12px 14px !important;
+    position:relative !important;
+  }
+  header .logo{
+    flex:0 0 auto !important;
+    margin-right:auto !important;
+    display:flex !important;
+    align-items:center !important;
+    gap:8px !important;
+  }
+  header .logo img{
+    width:55px !important;
+    height:55px !important;
+    object-fit:contain !important;
+  }
+  header .logo-text{
+    display:flex !important;
+    flex-direction:column !important;
+    line-height:1.1 !important;
+  }
+  header .menu-btn{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:44px !important; height:44px !important;
+    min-width:44px !important;
+    margin-left:auto !important;
+    background:#7C3AED !important; color:#fff !important;
+    border:none !important; border-radius:12px !important;
+    font-size:22px !important; cursor:pointer !important;
+    order:2 !important;
+  }
+  header .btn-top{
+    display:none !important;
+  }
+  header nav{
+    display:none !important;
+    position:absolute !important;
+    top:100% !important; left:12px !important; right:12px !important;
+    background:#fff !important;
+    flex-direction:column !important;
+    padding:12px !important; gap:4px !important;
+    border-radius:16px !important;
+    box-shadow:0 10px 30px rgba(0,0,0,.15) !important;
+    z-index:99 !important;
+  }
+  header nav.open, header nav.active, header nav.show{
+    display:flex !important;
+  }
+  header nav a{
+    display:block !important; padding:12px !important;
+    text-align:center !important; font-size:16px !important;
+  }
 }
-.icon-box i{
-  color:#fff !important;
-  font-size:26px !important;
+@media (max-width: 768px){
+  .logo img, .header .logo img, .navbar .logo img, .nav-logo img{
+    width:55px !important;
+    height:55px !important;
+    max-width:none !important;
+  }
+  .logo, .header .logo, .navbar .logo{
+    font-size:22px !important;
+  }
+  .logo span{
+    font-size:22px !important;
+  }
 }
+/* ===== TEAM BOX ===== */
+.team-box{
+  background:#E9E5FF;
+  border-radius:18px;
+  padding:40px 25px;
+  text-align:center;
+  clear:both;
+}
+.badge{
+  background:#FFE4EC;color:#EC4899;
+  font-size:11px;font-weight:700;
+  padding:6px 12px;border-radius:20px;
+}
+.team-box h1{font-size:32px;margin:12px 0 8px}
+.team-box h1 span{color:#D946EF}
+.team-box p.sub{color:#666;font-size:14px;margin-bottom:30px}
+
+/* ===== CARDS ===== */
+.cards{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.card{
+  background:#fff;width:220px;border-radius:15px;
+  padding:15px;text-align:left;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06)
+}
+.card img{width:100%;height:220px;object-fit:cover;border-radius:12px}
+.card h3{font-size:16px;margin:12px 0 2px}
+.card h4{font-size:12px;color:#A855F7;margin-bottom:8px}
+.card p{font-size:12.5px;color:#666;line-height:1.6}
 </style>
 
 </head>
