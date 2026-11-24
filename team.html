@@ -59,28 +59,24 @@ footer{
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-}
-  @media (max-width: 768px){
-  body.team-page nav{
+ @media (max-width: 768px){
+  header nav#mainNav{
+    display: none !important;
     width: 100% !important;
-    flex-wrap: wrap !important;
-    overflow: hidden !important;
-    padding: 10px !important;
+    flex-direction: column !important;
+    background: white !important;
+    padding: 15px !important;
+    border-radius: 16px !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1) !important;
   }
-  body.team-page nav .links{
-    width: 100% !important;
+  header nav#mainNav.show{
     display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 8px !important;
   }
-  body.team-page nav .links a{
-    font-size: 12px !important;
-  }
-  body.team-page nav .btn{
-    padding: 6px 12px !important;
-    font-size: 12px !important;
+  .menu-btn{
+    display: flex !important;
   }
 }
+
     </style>
 <body class="team-page">
 <div class="container">
