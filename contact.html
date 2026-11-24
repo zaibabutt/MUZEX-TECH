@@ -1,7 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact Us - MUZEX TECHNOLOGIES</title><meta name="description" content="Contact MUZEX - Let's build something extraordinary."><link rel="stylesheet" href="style.css"></head>
-<body>
+<style>
+/* MOBILE NAVBAR FIX - MUZEX */
+@media (max-width: 768px){
+  header{
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    flex-wrap:nowrap !important;
+    gap:8px !important;
+    padding:12px 14px !important;
+    position:relative !important;
+  }
+  header .logo{ flex:1 !important; display:flex !important; align-items:center !important; gap:8px !important; }
+  header .logo img{ width:70px !important; height:auto !important; }
+  header .logo-text{ display:flex !important; flex-direction:column !important; line-height:1.1 !important; }
+  header .menu-btn{
+    display:flex !important;
+    align-items:center !important; justify-content:center !important;
+    width:44px !important; height:44px !important;
+    min-width:44px !important;
+    background:#7C3AED !important; color:#fff !important;
+    border:none !important; border-radius:12px !important;
+    font-size:22px !important; cursor:pointer !important;
+    order:2 !important;
+  }
+  header .btn-top{
+    display:none !important; /* mobile me Get a Quote menu ke andar jayega */
+  }
+  header nav{
+    display:none !important;
+    position:absolute !important;
+    top:100% !important; left:12px !important; right:12px !important;
+    background:#fff !important;
+    flex-direction:column !important;
+    padding:12px !important; gap:4px !important;
+    border-radius:16px !important;
+    box-shadow:0 10px 30px rgba(0,0,0,.15) !important;
+    z-index:99 !important;
+  }
+  header nav.open, header nav.active, header nav.show{
+    display:flex !important;
+  }
+  header nav a{
+    display:block !important; padding:12px !important;
+    text-align:center !important; font-size:16px !important;
+  }
+}
+    /* Header Logo Bara - Sirf Mobile */
+@media (max-width: 768px){
+  .logo img, .header .logo img, .navbar .logo img, .nav-logo img{
+    width: 65px !important;
+    height: auto !important;
+    max-width: none !important;
+  }
+
+  /* Agar logo text me hai to text bhi bara */
+  .logo, .header .logo, .navbar .logo{
+    font-size: 28px !important;
+  }
+
+  .logo span{
+    font-size: 28px !important;
+  }
+}
+</style>
+<style>
+/* SARY ICONS - SAME STYLE Jaisa About/Services/Blog me hai */
+.icon-box, .explore-icon, .talk-icon{
+  width:56px !important; height:56px !important;
+  min-width:56px !important; min-height:56px !important;
+  background: linear-gradient(135deg,#A855F7,#EC4899) !important;
+  border-radius:50% !important;
+  display:flex !important; align-items:center !important; justify-content:center !important;
+  color:#fff !important; font-size:1px !important; box-shadow:0 8px 20px rgba(168,85,247,.35) !important;
+  margin-bottom:14px !important; padding:0 !important;
+}
+.icon-box svg, .explore-icon svg, .talk-icon svg{ width:26px !important; height:26px !important; stroke:#fff !important; fill:none !important; stroke-width:1.8 !important; stroke-linecap:round !important; stroke-linejoin:round !important; }
+.icon-box.small{ width:38px !important; height:38px !important; min-width:38px !important; min-height:38px !important; margin-bottom:0 !important; }
+.icon-box.small svg{ width:19px !important; height:19px !important; }
+.footer-ico{ display:inline-flex; vertical-align:middle; margin-right:6px; }
+.footer-ico svg{ width:16px; height:16px; stroke:#fff; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.btn-email, .btn-whatsapp{ display:inline-flex !important; align-items:center !important; gap:6px !important; }
+.btn-email svg, .btn-whatsapp svg{ width:17px; height:17px; stroke:#fff; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+@media (max-width: 768px){
+  .hero, .hero-section, .hero-container{
+    flex-direction: column !important;
+    display: flex !important;
+  }
+
+  /* 1. Text upar */
+  .hero-text, .hero-left, .hero-content{
+    order: 1 !important;
+  }
+
+  /* 2. Business Growth Card - BUTTONS KE UPAR */
+  .hero-visual, .dashboard, .hero-right{
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 20px 0 20px 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    overflow: visible !important;
+    order: 2 !important;
+  }
+
+  /* 3. Buttons - Card ke neeche */
+  .hero-buttons, .buttons, .cta-buttons, .btn-group{
+    order: 3 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  /* 4. Stats sab se neeche */
+  .hero-stats, .stats{
+    order: 4 !important;
+  }
+
+  body{ overflow-x: hidden !important; }
+}
+</style>
+  <body>
 <div class="container">
 <header>
 <a href="index.html" class="logo"><img src="muzex-logo.png" alt="MUZEX"><div class="logo-text"><span class="logo-main">MUZEX</span><span class="logo-sub">TECHNOLOGIES</span></div></a>
