@@ -73,18 +73,23 @@
 .footer-ico svg{ width:16px; height:16px; stroke:#fff; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
 .btn-email, .btn-whatsapp{ display:inline-flex !important; align-items:center !important; gap:6px !important; }
 .btn-email svg, .btn-whatsapp svg{ width:17px; height:17px; stroke:#fff; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
-  /* Mobile Fix - Card bahar na nikle */
-@media (max-width: 600px){
-  body, html{
-    overflow-x: hidden !important;
+@media (max-width: 768px){
+  .hero, .hero-section, .hero-container{
+    flex-direction: column !important;
+    display: flex !important;
   }
-  .hero-visual, .dashboard, .growth-card, .business-card, .container{
+  .hero-visual, .dashboard, .hero-right{
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
     max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    overflow: hidden !important;
-    box-sizing: border-box !important;
+    margin: 20px 0 0 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    overflow: visible !important;
   }
+  body{ overflow-x: hidden !important; }
 }
 </style>
 </head>
