@@ -14,21 +14,37 @@
     padding:12px 14px !important;
     position:relative !important;
   }
-  header .logo{ flex:1 !important; display:flex !important; align-items:center !important; gap:8px !important; }
-  header .logo img{ width:70px !important; height:auto !important; }
-  header .logo-text{ display:flex !important; flex-direction:column !important; line-height:1.1 !important; }
+  header .logo{
+    flex:0 0 auto !important;
+    margin-right:auto !important;
+    display:flex !important;
+    align-items:center !important;
+    gap:8px !important;
+  }
+  header .logo img{
+    width:55px !important;
+    height:55px !important;
+    object-fit:contain !important;
+  }
+  header .logo-text{
+    display:flex !important;
+    flex-direction:column !important;
+    line-height:1.1 !important;
+  }
   header .menu-btn{
     display:flex !important;
-    align-items:center !important; justify-content:center !important;
+    align-items:center !important;
+    justify-content:center !important;
     width:44px !important; height:44px !important;
     min-width:44px !important;
+    margin-left:auto !important;
     background:#7C3AED !important; color:#fff !important;
     border:none !important; border-radius:12px !important;
     font-size:22px !important; cursor:pointer !important;
     order:2 !important;
   }
   header .btn-top{
-    display:none !important; /* mobile me Get a Quote menu ke andar jayega */
+    display:none !important;
   }
   header nav{
     display:none !important;
@@ -49,21 +65,17 @@
     text-align:center !important; font-size:16px !important;
   }
 }
-    /* Header Logo Bara - Sirf Mobile */
 @media (max-width: 768px){
   .logo img, .header .logo img, .navbar .logo img, .nav-logo img{
-    width: 65px !important;
-    height: auto !important;
-    max-width: none !important;
+    width:55px !important;
+    height:55px !important;
+    max-width:none !important;
   }
-
-  /* Agar logo text me hai to text bhi bara */
   .logo, .header .logo, .navbar .logo{
-    font-size: 28px !important;
+    font-size:22px !important;
   }
-
   .logo span{
-    font-size: 28px !important;
+    font-size:22px !important;
   }
 }
 </style>
@@ -90,13 +102,9 @@
     flex-direction: column !important;
     display: flex !important;
   }
-
-  /* 1. Text upar */
   .hero-text, .hero-left, .hero-content{
     order: 1 !important;
   }
-
-  /* 2. Business Growth Card - BUTTONS KE UPAR */
   .hero-visual, .dashboard, .hero-right{
     position: relative !important;
     display: block !important;
@@ -109,8 +117,6 @@
     overflow: visible !important;
     order: 2 !important;
   }
-
-  /* 3. Buttons - Card ke neeche */
   .hero-buttons, .buttons, .cta-buttons, .btn-group{
     order: 3 !important;
     display: flex !important;
@@ -118,12 +124,9 @@
     gap: 12px !important;
     width: 100% !important;
   }
-
-  /* 4. Stats sab se neeche */
   .hero-stats, .stats{
     order: 4 !important;
   }
-
   body{ overflow-x: hidden !important; }
 }
 </style>
