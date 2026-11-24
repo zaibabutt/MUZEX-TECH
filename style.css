@@ -332,11 +332,21 @@ header{ display:flex !important; flex-direction:row !important; align-items:cent
 .bars{ display:flex !important; }
 .bar{ flex:1 !important; }
 nav{ display:flex !important; flex-direction:row !important; }
+/* MUZEX - SOFTWARE HOUSE FIX - Neeche lane ke liye */
+.logo-text{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  line-height: 1.1 !important;
+}
+
 .logo-tag{
-  display: block;
-  font-size: 9px;
-  letter-spacing: 3px;
-  color: #888;
-  font-weight: 600;
-  margin-top: 2px;
+  display: block !important;
+  width: 100% !important;
+  font-size: 9px !important;
+  letter-spacing: 3px !important;
+  color: #888 !important;
+  font-weight: 600 !important;
+  margin-top: 2px !important;
+}
 }
