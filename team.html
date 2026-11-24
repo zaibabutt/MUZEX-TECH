@@ -19,46 +19,62 @@ body{background:#fff;padding:20px}
     align-items:center !important;
     justify-content:space-between !important;
     flex-wrap:nowrap !important;
-    gap:15px !important;
-    padding:12px 25px !important;
-    width:100% !important;
+    gap:12px !important;
+    padding:12px 15px !important;
   }
   header .logo{
     display:flex !important;
     align-items:center !important;
-    gap:12px !important;
+    gap:10px !important;
     flex-wrap:nowrap !important;
     white-space:nowrap !important;
+    flex-shrink:0 !important;
   }
   header .logo img{
-    width:70px !important;
-    height:70px !important;
-    min-width:70px !important;
+    width:55px !important;
+    height:55px !important;
+    min-width:55px !important;
     object-fit:contain !important;
   }
   header .logo br{display:none !important;}
-  header .logo-text, header .logo h1, header .logo span, header h1{
-    font-size:21px !important;
+  /* LOGO TEXT KO COLUMN KARO - TAKE SOFTWARE HOUSE NEECHE AAYE */
+  header .logo-text{
+    display:flex !important;
+    flex-direction:column !important;
     line-height:1.1 !important;
     white-space:nowrap !important;
-    display:inline !important;
+  }
+  /* MUZEX TECHNOLOGIES - 1 LINE */
+  header .logo-text h1, header .logo h1, header h1{
+    font-size:18px !important;
+    line-height:1.1 !important;
+    white-space:nowrap !important;
+    display:block !important;
     margin:0 !important;
   }
-  header .logo-text small, header .logo p{
-    font-size:10px !important;
+  header .logo-text h1 span, header .logo h1 span{
+    font-size:18px !important;
+    display:inline !important;
+    white-space:nowrap !important;
+  }
+  /* SOFTWARE HOUSE - CHOTA - SPAN HO YA SMALL YA P SAB COVER */
+  header .logo-text small, header .logo-text p, header .logo-text span:last-child, header .logo p, header .logo small{
+    font-size:9px !important;
     letter-spacing:2px !important;
     display:block !important;
+    line-height:1.2 !important;
   }
   header nav{
     display:flex !important;
     flex-direction:row !important;
-    gap:25px !important;
+    gap:18px !important;
     align-items:center !important;
     white-space:nowrap !important;
+    flex-shrink:0 !important;
   }
-  header nav a{font-size:15px !important; white-space:nowrap !important;}
+  header nav a{font-size:14px !important; white-space:nowrap !important;}
   header .menu-btn{display:none !important;}
-  header .btn-top{display:block !important; white-space:nowrap !important;}
+  header .btn-top{display:block !important; white-space:nowrap !important; flex-shrink:0 !important;}
 }
 
 /* ===== HEADER - MOBILE ===== */
@@ -89,14 +105,20 @@ body{background:#fff;padding:20px}
     object-fit:contain !important;
   }
   header .logo br{display:none !important;}
-  header .logo-text, header .logo h1, header .logo span, header h1{
-    font-size:18px !important;
+  header .logo-text{
+    display:flex !important;
+    flex-direction:column !important;
     line-height:1.1 !important;
     white-space:nowrap !important;
-    display:inline !important;
+  }
+  header .logo-text h1, header .logo h1{
+    font-size:17px !important;
+    display:block !important;
+    white-space:nowrap !important;
     margin:0 !important;
   }
-  header .logo-text small, header .logo p{
+  header .logo-text h1 span{font-size:17px !important; display:inline !important;}
+  header .logo-text small, header .logo-text p{
     font-size:9px !important;
     letter-spacing:2px !important;
     display:block !important;
@@ -134,7 +156,7 @@ body{background:#fff;padding:20px}
   }
 }
 
-/* ===== TEAM BOX - WAPIS LAYA ===== */
+/* ===== TEAM BOX ===== */
 .team-box{
   background:#E9E5FF;
   border-radius:18px;
