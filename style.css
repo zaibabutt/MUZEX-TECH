@@ -332,3 +332,11 @@ header{ display:flex !important; flex-direction:row !important; align-items:cent
 .bars{ display:flex !important; }
 .bar{ flex:1 !important; }
 nav{ display:flex !important; flex-direction:row !important; }
+.logo-tag{
+  display: block;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #888;
+  font-weight: 600;
+  margin-top: 2px;
+}
